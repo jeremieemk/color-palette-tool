@@ -22,7 +22,7 @@ function loadInputImage() {
 }
 
 function applyColorPalette() {
-  const palette = ['#4a2c2c', '#d3504a', '#ffdc76', '#fefea4'];
+  const palette = ['#0F6DA6', '#DB6814', '#DD360A', '#EAD19B', '#FF8D0D', '#FDD807'];
 
   // Convert the image to an array of pixels
   const pixels = [];
