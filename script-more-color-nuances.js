@@ -22,15 +22,36 @@ function loadInputImage() {
 }
 
 function applyColorPalette() {
+	// const originalPalette = [
+	// 	"#0F6DA6",
+	// 	"#DB6814",
+	// 	"#DD360A",
+	// 	"#EAD19B",
+	// 	"#FF8D0D",
+	// 	"#FDD807",
+    //     "#000",
+    //     "#fff"
+	// ];
+    // const originalPalette = [
+    //     "#E6901C",
+    //     "#4C6164",
+    //     "#F5BF14",
+    //     "#18518F",
+    //     "#D7CEB2",
+    //     "#C82E2A",
+    //     "#000",
+    //     "#fff"
+    // ];
 	const originalPalette = [
-		"#0F6DA6",
-		"#DB6814",
-		"#DD360A",
-		"#EAD19B",
-		"#FF8D0D",
-		"#FDD807",
-        "#000",
-        "#fff"
+		"##FE3326",
+		"#FEBB00",
+		"#009374",
+		"#00802E",
+		"#007E83",
+		"#00802E",
+		"#753B32",
+		"#020E21",
+		"#fff"
 	];
 	let palette = [];
 
@@ -51,7 +72,7 @@ function applyColorPalette() {
 	palette.push(color(originalPalette[originalPalette.length - 1]));
 
 	img.loadPixels();
-    img = adjustContrast(img, 100);
+    // img = adjustContrast(img, 100);
 
 	for (let i = 0; i < img.pixels.length; i += 4) {
 		const r = img.pixels[i];
